@@ -1,10 +1,10 @@
 class Simmer < Formula
   desc "Stream iOS Simulator to your browser with touch, keyboard, and terminal"
   homepage "https://github.com/joshdholtz/simmer"
-  url "https://github.com/joshdholtz/simmer/releases/download/v0.2.0/simmer-v0.2.0-arm64.tar.gz"
-  sha256 "08ae318247da1cd071d92a779ef5ba064aed7371e3bfcb47ced279ef15bc3994"
+  url "https://github.com/joshdholtz/simmer/releases/download/v0.3.0/simmer-v0.3.0-arm64.tar.gz"
+  sha256 "e76870f2f0de8e77cb528527ea6d0dcf70ad42df82e8881d543bd34f1b10314a"
   license "MIT"
-  version "0.2.0"
+  version "0.3.0"
 
   def install
     bin.install "simmer"
