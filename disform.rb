@@ -5,21 +5,21 @@
 class Disform < Formula
   desc "Declarative Discord server management. Like Terraform, but for Discord."
   homepage "https://github.com/joshdholtz/disform"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/joshdholtz/disform/releases/download/v0.1.2/disform_0.1.2_darwin_amd64.tar.gz"
-      sha256 "6dfa428f4a525633a5c77a79e2e1809492856ac0ececc452183e16e3f2293fc9"
+      url "https://github.com/joshdholtz/disform/releases/download/v0.1.3/disform_0.1.3_darwin_amd64.tar.gz"
+      sha256 "e9c75d0d08606297d1855c76501872db2eb83fb4372bf969e122fc0747cc0bbd"
 
       define_method(:install) do
         bin.install "disform"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/joshdholtz/disform/releases/download/v0.1.2/disform_0.1.2_darwin_arm64.tar.gz"
-      sha256 "ea25235e8d871b541c4a67db76b8681b27cb66ebb0eb6c674add2a2ed086eb3e"
+      url "https://github.com/joshdholtz/disform/releases/download/v0.1.3/disform_0.1.3_darwin_arm64.tar.gz"
+      sha256 "0c0fd3aaa898df382562ff58299518110078b8bd7fe7b0e2d308df465c37efd0"
 
       define_method(:install) do
         bin.install "disform"
@@ -29,15 +29,15 @@ class Disform < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joshdholtz/disform/releases/download/v0.1.2/disform_0.1.2_linux_amd64.tar.gz"
-      sha256 "1fc7966ea7fd98a4cb6b0aa1ee7754ebb113ced7c9399c3feaa249fc0c5caa12"
+      url "https://github.com/joshdholtz/disform/releases/download/v0.1.3/disform_0.1.3_linux_amd64.tar.gz"
+      sha256 "b0fefaa392bd448642929845aeeb42f7151bcc6c76b22a3771604d71a3dec0cf"
       define_method(:install) do
         bin.install "disform"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/joshdholtz/disform/releases/download/v0.1.2/disform_0.1.2_linux_arm64.tar.gz"
-      sha256 "d2ec01486c61717b30f975fd536f390d2e4429999a544135eefa107efc1a6c87"
+      url "https://github.com/joshdholtz/disform/releases/download/v0.1.3/disform_0.1.3_linux_arm64.tar.gz"
+      sha256 "369ff33420dec6eb926f1d117904084bb60928e9a38f2a424b92dad6efb19078"
       define_method(:install) do
         bin.install "disform"
       end
